@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <header class="header">
+                <nav class="navbar">
+                    <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="img" style="max-width:170px; max-height:200px"></img></a>
+                    <ul class="nav-menu">
+                        <li class="navitemhome">
+                            <img src="home.png" alt="img" style="max-width:30px; max-height:30px"></img></a>
+                        </li>
+
+                        <li class="navitemsearch">
+                            <img src="search.png" alt="img" style="max-width:30px; max-height:30px"></img></a>
+                        </li>
+                        
+                        <li class="navitemtools">
+                            <img src="tools.png" alt="img" style="max-width:25px; max-height:25px"></img></a>
+                        </li>
+
+                        <li class="navitembell">
+                            <img src="bell.png" alt="img" style="max-width:25px; max-height:25px"></img></a>
+                        </li>
+
+                        <li class="navitemcircle">
+                            <img src="circle.png" alt="img" style="max-width:25px; max-height:25px"></img></a>
+                        </li>
+
+                        <li class="navitemdots">
+                            <img src="dots.png" alt="img" style="max-width:25px; max-height:25px"></img></a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+        </header>
+    <body>       
+            <div class="navigation">
+                <div id="menu" onclick="onClickMenu()">
+                    <span id="bar1" class="bar"></span>
+                    <span id="bar2" class="bar"></span>
+                    <span id="bar3" class="bar"></span>
+                </div>
+            </div>
+            <ul class="nav" id="nav" >
+                <li><a href="#"><b>1. Name of the task goes here</b></a></li>
+                <li><a rel="text">Asset Heading 1</a></li>
+                <li><div id="A1" onclick="onClickA2()"><a href="#">Asset Heading 2</a></div></li>
+                <li><div id="A1" onclick="onClickA3()"><a href="#">Asset Heading 3</a></div></li>
+                <li><div id="A1" onclick="onClickA4()"><a href="#">Asset Heading 4</a></div></li>
+                <li><div id="A1" onclick="onClickA5()"><a href="#">Asset Heading 5</a></div></li>
+                <li><div id="A6" onclick="onClickA6()"><a rel="video">Asset Heading 6</a></div></li>
+            </ul>      
+
+        <div class = "hero">
+            <div class ="form-box">
+                <div class="hed">
+                    <div class="hedtext">You are taking Challenges of New Project</div>
+                </div>
+
+                <div class="h2">Name of the task goes here</div>
+                
+                <div class="grid-container">
+                    <div class="text">
+                        <div class="gridheader">
+                            <div class="p"> Asset Heading 1 </div>
+                        </div>
+                        <div class="divtext" id="divtext">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type 
+                            specimen book. It has survived not only five centuries, but also the leap into 
+                            electronic typesetting, remaining essentially unchanged. It was popularised in the 
+                            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                            recently with desktop.
+                        </div>
+                    </div>
+
+                    <div class="textarea">
+                        <div class="gridheader">
+                            <div class="p"> Asset Heading 2 </div>
+                        </div>
+                        <div class = "txtArea">
+                        <textarea cols="37" rows="10" placeholder="Reflect as per given guidelines" > </textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" onclick="Subbtn()">Submit</button>
+                    </div>
+
+                    <div class="pdf">
+                        <div class="gridheader">
+                            <div class="p"> Asset Heading 3 </div>
+                        </div>
+                            <div class = "divpdf">
+                                <embed src="Big data.pdf" width="300px" height="260px" />                            
+                        </div>
+                    </div>
+
+                    <div class="image">
+                        <div class="gridheader">
+                            <div class="p"> Asset Heading 4 </div>
+                        </div>
+                        <div class="divimage">
+                            <a href="https://www.w3schools.com/html/default.asp"><img src="asset4.png" alt="img" style="max-width:350px; max-height:350px"></img></a>
+                        </div>
+                    </div>
+
+                    <div class="audio">
+                        <div class="gridheader">
+                            <div class="p"> Asset Heading 5 </div>
+                        </div>
+                        <div class="devaudio"><audio controls>
+                            <source src="DTaud.mp3" type="audio/mpeg">
+                          </audio></div>
+                        <div class="divtext">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type 
+                            specimen book.
+                        </div>
+                    </div>
+                    
+                    <div class="video">
+                        <div class="gridheader">
+                            <div class="p" id="Asset6"> Asset Heading 6 </div>
+                        </div>
+                        <div class = "divyt">
+                            <iframe width="310" height="270" src="https://www.youtube.com/embed/s8H0Sx7jy7c">
+
+                            </iframe>
+                        </div>
+                    </div>
+                </div>       
+            </div>        
+        </div>
+
+    <script>
+        function onClickMenu(){
+            document.getElementById("menu").classList.toggle("icon");
+            document.getElementById("nav").classList.toggle("change");
+        }
+        function Subbtn(){
+            alert("Hello Sir!!");
+        }
+        function onClickA1(){
+            document.getElementById("A1").style.color = "blue";  
+        }
+        function onClickA2(){
+            document.getElementById("A2").style.color = "blue";  
+        }
+        function onClickA3(){
+            document.getElementById("A3").style.color = "blue";  
+        }
+        function onClickA4(){
+            document.getElementById("A4").style.color = "blue";  
+        }
+        function onClickA5(){
+            document.getElementById("A5").style.color = "blue";  
+        }
+        function onClickA6(){
+            document.getElementById("A6").style.color = "blue";  
+        }
+    </script>
+    </body>
+</html>
+
